@@ -50,3 +50,10 @@ attributes to be passed to the sensu_client LWRP.
 
 Example: To monitor the Redis service running on a Chef node, include
 "recipe[monitor::redis]" in its run list.
+
+### Test Kitchen
+
+The .kitchen.yml depends on librarian-chef. If using the chef-dk and you wish to test with test kitchen, you must install the gem first
+
+     (sudo) chef gem install librarian-chef
+     kitchen create
